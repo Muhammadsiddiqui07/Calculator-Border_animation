@@ -1,0 +1,91 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#ClearBtn {
+    border-radius: 100px;
+}
+
+.button_div {
+    width: 100%;
+}
+
+.btnContainer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+#zeroBtn {
+    width: 120px;
+    border-radius: 100px;
+}
+
+.animation {
+    height: 400px;
+    width: 400px;
+    background-color: #2f2f2f;
+    position: relative;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.card-body {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: black;
+    text-align: center;
+}
+
+.card1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.card1 {
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    z-index: 99;
+}
+
+.animation::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 600px;
+    width: 100px;
+    background-color: white;
+    animation: move 1.5s infinite;
+}
+
+#result {
+    border-color: black;
+    height: 30px;
+    margin: 0 auto;
+    margin-right: 20px;
+}
+
+.btn:active {
+    opacity: 0.5;
+}
+
+#heading {
+    color: white;
+}
+
+@keyframes move {
+    100% {
+        transform: translate(-50%, -50%) rotate(255deg);
+    }
+}
